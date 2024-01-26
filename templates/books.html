@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>List of Books</title>
+</head>
+<body>
+  <h3>List of Books</h3>
+  <table border="1">
+    <thead>
+      <tr>
+        <th>Title</th>
+        <th>Author</th>
+        <th>Publication Year</th>
+      </tr>
+    </thead>
+    <tbody>
+    {% for book in list %}
+        <li>
+            <tr>
+            <td>{{ book.title }}</td>
+            <td>{{ book.author }}</td>
+            <td>{{ book.pubyear }}</td>
+            </tr>
+        </li>
+    {% endfor %}
+    </tbody>
+  </table>
+</body>
+</html>
